@@ -10,6 +10,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Glossily";
+  src: url("../fonts/glossily/GlossilyEnigmatic.ttf");
+  src: url("../fonts/glossily/GlossilyEnigmatic.ttf?srf3rx#iefix")
+      format("embedded-opentype"),
+    url("../fonts/glossily/GlossilyEnigmatic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-color: #6497bb;
+  --light-color: #fff5dc;
+}
+
 /* =======================================================
 *
 * 	Template Style 
@@ -31,7 +46,7 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #f69d9d;
+  color: var(--dark-color);
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease;
@@ -58,7 +73,7 @@ h4,
 h5,
 h6 {
   color: #5a5a5a;
-  font-family: "Montez", cursive;
+  font-family: "Glossily", cursive;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -310,7 +325,7 @@ figure {
 .sf-menu ul li:hover a,
 .sf-menu ul li.sfHover a,
 .sf-menu li.active a {
-  color: #f69d9d;
+  color: var(--dark-color);
 }
 
 .sf-menu ul li:hover,
@@ -395,12 +410,12 @@ figure {
 }
 
 #fh5co-logo a {
-  color: #f69d9d;
+  color: var(--dark-color);
 }
 
 #fh5co-logo a:hover,
 #fh5co-logo a:focus {
-  color: #f69d9d !important;
+  color: var(--dark-color) !important;
 }
 
 #fh5co-menu-wrap {
@@ -571,15 +586,33 @@ figure {
   }
 }
 
-.fh5co-section-gray {
-  background: #f6faf7;
+.fh5co-section-light {
+  background: var(--light-color);
 }
 
-.fh5co-section-pink {
-  background: #f69d9d;
+.fh5co-section-light .heading-section h2,
+.fh5co-section-light .heading-section a {
+  color: var(--dark-color);
+}
+
+.fh5co-section-dark {
+  background: var(--dark-color);
+}
+
+.fh5co-section-dark p {
   color: #fff;
 }
 
+.fh5co-section-dark .heading-section h2,
+.fh5co-section-dark .heading-section a {
+  color: var(--light-color);
+}
+
+.fh5co-section-light .heading-section a:hover {
+  color: #f69d9d;
+}
+
+/*
 .fh5co-section-pink .heading-section h2,
 .fh5co-section-pink .heading-section a {
   color: #fff;
@@ -587,7 +620,7 @@ figure {
 
 .fh5co-section-pink .heading-section p {
   color: #000000;
-}
+} */
 
 .heading-section {
   padding-bottom: 1em;
@@ -603,6 +636,10 @@ figure {
 
 .heading-section p {
   font-size: 18px;
+}
+
+.main-heading {
+  font-size: 110px;
 }
 
 #fh5co-couple img {

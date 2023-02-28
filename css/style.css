@@ -23,7 +23,7 @@
 :root {
   --dark-color: #6497bb;
   --light-color: #fffcf4;
-  --heading-font: "Glossily";
+  --heading-font: "Glossily", "Inspiration";
 }
 
 /* =======================================================
@@ -85,17 +85,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #f69d9d;
+  background: var(--dark-color);
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #f69d9d;
+  background: var(--dark-color);
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #f69d9d;
+  background: var(--dark-color);
 }
 
 #fh5co-header {
@@ -569,7 +569,9 @@ figure {
 #fh5co-when-where,
 #fh5co-guest,
 #fh5co-gallery,
-.fh5co-content-section {
+.fh5co-content-section,
+.fh5co-section-dark,
+.fh5co-section-light {
   padding: 7em 0;
 }
 
@@ -611,11 +613,6 @@ figure {
 
 .fh5co-section-light .heading-section a:hover {
   color: #f69d9d;
-}
-
-.heading-section {
-  padding-bottom: 1em;
-  margin-bottom: 3em;
 }
 
 .heading-section h2 {
@@ -664,7 +661,7 @@ figure {
 }
 
 #fh5co-countdown {
-  background: #f69d9d;
+  background: var(--dark-color);
 }
 
 #fh5co-countdown .countdown {
@@ -676,7 +673,7 @@ figure {
 #fh5co-countdown .countdown span {
   margin: 0 30px;
   display: inline-block;
-  font-family: "Montez", cursive;
+  font-family: "Inspiration", cursive;
 }
 
 #fh5co-countdown .countdown small {
@@ -959,7 +956,7 @@ figure {
 }
 
 #footer {
-  background: #f69d9d;
+  background: var(--dark-color);
   padding: 60px 0 40px;
 }
 

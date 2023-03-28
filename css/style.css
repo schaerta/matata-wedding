@@ -51,15 +51,15 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: var(--dark-color);
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease;
+  border-bottom: 1px solid;
 }
 
 a:hover {
   text-decoration: none;
-  color: #f69d9d;
+  border: none;
 }
 
 p,
@@ -614,9 +614,12 @@ figure {
 
 .fh5co-section-light .heading-section h2,
 .fh5co-section-light .heading-section h3,
-.fh5co-section-light .heading-section h4,
-.fh5co-section-light .heading-section a {
+.fh5co-section-light .heading-section h4 {
   color: var(--dark-color);
+}
+
+.fh5co-section-light .heading-section a {
+  color: var(--text-color);
 }
 
 .fh5co-section-dark {
@@ -634,11 +637,7 @@ figure {
 }
 
 .fh5co-section-dark .heading-section a {
-  color: #f9c5c5;
-}
-
-.fh5co-section-light .heading-section a:hover {
-  color: #f69d9d;
+  color: white;
 }
 
 .heading-section h2 {

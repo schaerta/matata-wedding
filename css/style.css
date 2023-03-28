@@ -73,14 +73,24 @@ ol {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: #5a5a5a;
   font-family: var(--heading-font), cursive;
   font-weight: 400;
   margin: 0 0 30px 0;
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--body-font), sans-serif;
+  margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 figure {
@@ -604,6 +614,7 @@ figure {
 
 .fh5co-section-light .heading-section h2,
 .fh5co-section-light .heading-section h3,
+.fh5co-section-light .heading-section h4,
 .fh5co-section-light .heading-section a {
   color: var(--dark-color);
 }
@@ -617,7 +628,8 @@ figure {
 }
 
 .fh5co-section-dark .heading-section h2,
-.fh5co-section-dark .heading-section h3 {
+.fh5co-section-dark .heading-section h3,
+.fh5co-section-dark .heading-section h4 {
   color: var(--light-color);
 }
 
@@ -651,10 +663,18 @@ figure {
   padding-bottom: 25px;
 }
 
+.intro-image {
+  margin-bottom: 20px;
+}
+
 .ablauf {
   display: flex;
   justify-content: space-between;
 }
+
+/* .schedule-item {
+  font-weight: 500;
+} */
 
 .col {
   width: 45%;

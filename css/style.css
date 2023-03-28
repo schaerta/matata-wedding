@@ -23,7 +23,8 @@
 :root {
   --dark-color: #6497bb;
   --light-color: #fffcf4;
-  --heading-font: "Allison";
+  --heading-font: "Allison", "Glossily", cursive;
+  --body-font: "Quicksand", "Raleway", "Open Sans", Arial, sans-serif;
 }
 
 /* =======================================================
@@ -33,7 +34,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--body-font);
   line-height: 1.6;
   font-size: 16px;
   background: #fff;
@@ -64,7 +65,7 @@ ol {
   margin-bottom: 1.5em;
   font-size: 16px;
   color: #848484;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--body-font);
 }
 
 h1,
@@ -626,14 +627,14 @@ figure {
 }
 
 .heading-section h2 {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 300;
   position: relative;
   color: #f69d9d;
 }
 
 .heading-section h3 {
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 300;
 }
 

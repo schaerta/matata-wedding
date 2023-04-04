@@ -1124,13 +1124,17 @@ img {
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 3000;
   background: #222;
   right: -240px;
   width: 240px;
   padding: 20px;
   overflow-y: scroll !important;
   display: none;
+}
+
+.offcanvas-menu-open {
+  right: 0 !important;
 }
 
 @media screen and (max-width: 768px) {

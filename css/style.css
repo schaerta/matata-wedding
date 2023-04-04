@@ -679,6 +679,7 @@ figure {
 .ablauf {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* .schedule-item {
@@ -1287,10 +1288,30 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .fh5co-section-light,
+  .fh5co-section-dark {
+    padding: 4em 0;
+  }
+
   .fh5co-nav-toggle {
-    display: block;
+    display: flex;
+    height: 100%;
+    align-items: center;
     top: 0px;
-    margin-top: 2em;
+    /*margin-top: 2em;*/
+    border: none;
+  }
+
+  .heading-section h2 {
+    font-size: 75px;
+  }
+
+  .heading-section h3 {
+    font-size: 50px;
+  }
+
+  .col {
+    width: 100%;
   }
 }
 

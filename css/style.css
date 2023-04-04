@@ -1125,7 +1125,7 @@ img {
   top: 0;
   bottom: 0;
   z-index: 3000;
-  background: #222;
+  background: var(--light-color);
   right: -240px;
   width: 240px;
   padding: 20px;
@@ -1156,11 +1156,12 @@ img {
 
 #offcanvas-menu ul li a {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--dark-color);
 }
 
 #offcanvas-menu ul li a:hover {
-  color: #f69d9d;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 #offcanvas-menu ul li > .fh5co-sub-menu {
@@ -1169,7 +1170,7 @@ img {
 }
 
 #offcanvas-menu ul li.active > a {
-  color: #f69d9d;
+  color: var(--text-color);
 }
 
 #offcanvas-menu ul .fh5co-sub-menu {

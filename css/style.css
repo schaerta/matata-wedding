@@ -297,9 +297,13 @@ figure {
   *width: 12em;
 }
 
-.sf-menu a {
-  color: var(--dark-color);
+.sf-menu li {
   padding: 0.75em 1em !important;
+}
+
+.sf-menu a {
+  color: var(--text-color);
+  padding: 0 !important;
   font-weight: 400;
   border-left: none;
   border-top: none;
@@ -312,12 +316,14 @@ figure {
 
 .sf-menu a:hover,
 .sf-menu a:focus {
-  color: var(--link-color-light) !important;
+  color: var(--dark-color) !important;
+  border-bottom: 1px solid !important;
 }
 
 .sf-menu li.active a:hover,
 .sf-menu li.active a:focus {
-  color: var(--link-color-light);
+  color: var(--dark-color);
+  border-bottom: 1px solid !important;
 }
 
 .sf-menu li,
@@ -336,13 +342,13 @@ figure {
   font-size: 14px !important;
 }
 
-.sf-menu li:hover a,
+/* .sf-menu li:hover a,
 .sf-menu li.sfHover a,
 .sf-menu ul li:hover a,
 .sf-menu ul li.sfHover a,
 .sf-menu li.active a {
-  color: var(--link-color-dark);
-}
+  color: var(--dark-color);
+} */
 
 .sf-menu ul li:hover,
 .sf-menu ul li.sfHover {
@@ -411,6 +417,10 @@ figure {
   margin-top: 35px;
   font-weight: 700;
   float: left;
+}
+
+#fh5co-logo a {
+  border: none;
 }
 
 #fh5co-logo span {

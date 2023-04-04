@@ -9876,6 +9876,12 @@ $(document).ready(function () {
     });
   };
 
+  var mobileMenuLinkClick = function () {
+    $(".mobile-link").click(function (event) {
+      alert("Thanks for visiting!");
+    });
+  };
+
   // Animations
 
   var contentWayPoint = function () {
@@ -9963,6 +9969,7 @@ $(document).ready(function () {
     parallax();
     offcanvas();
     mobileMenuOutsideClick();
+    mobileMenuLinkClick();
     contentWayPoint();
     stickyBanner();
   });
@@ -21071,6 +21078,12 @@ $(document).ready(function () {
     });
   };
 
+  var mobileMenuLinkClick = function () {
+    $(".mobile-link").click(function (event) {
+      alert("Thanks for visiting!");
+    });
+  };
+
   // Animations
 
   var contentWayPoint = function () {
@@ -21117,6 +21130,7 @@ $(document).ready(function () {
     parallax();
     offcanvas();
     mobileMenuOutsideClick();
+    mobileMenuLinkClick();
     contentWayPoint();
     stickyBanner();
   });

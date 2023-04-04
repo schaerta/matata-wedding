@@ -83,6 +83,12 @@
     });
   };
 
+  var mobileMenuLinkClick = function () {
+    $(".mobile-link").click(function (event) {
+      alert("Thanks for visiting!");
+    });
+  };
+
   // Animations
 
   var contentWayPoint = function () {
@@ -169,6 +175,7 @@
     mainMenu();
     parallax();
     offcanvas();
+    mobileMenuOutsideClick();
     mobileMenuOutsideClick();
     contentWayPoint();
     stickyBanner();

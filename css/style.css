@@ -22,7 +22,7 @@
 
 :root {
   --dark-color: #6497bb;
-  --light-color: #fffcf4;
+  --light-color: #fcfaf6;
   --text-color: #012945;
   --link-color-light: #f9c5c5;
   --link-color-dark: #f69d9d;
@@ -673,6 +673,7 @@ figure {
 }
 
 .intro-image {
+  max-width: 500px;
   margin-bottom: 20px;
 }
 

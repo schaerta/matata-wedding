@@ -586,6 +586,26 @@ figure {
   color: #f69d9d !important;
 }
 
+.lang-link-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lang-link {
+  max-width: 40px;
+  max-height: 30px;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+
+.lang-link-container a {
+  border-bottom: none !important;
+}
+
+.lang-link-container a:hover {
+  border-bottom: none !important;
+}
+
 #fh5co-couple,
 #fh5co-countdown,
 #fh5co-groom-bride,

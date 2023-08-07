@@ -118,6 +118,13 @@ figure {
   z-index: 9999999;
 }
 
+.alert {
+  padding: 15px;
+  background-color: #ffd685;
+  color: #000;
+  font-weight: bold;
+}
+
 .stuck {
   position: fixed !important;
   top: 0 !important;
